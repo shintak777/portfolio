@@ -13,10 +13,13 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+import FaceIcon from '@material-ui/icons/Face';
+import SchoolIcon from '@material-ui/icons/School';
+import ComputerIcon from '@material-ui/icons/Computer';
+import CasinoIcon from '@material-ui/icons/Casino';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import { Face } from '@material-ui/icons';
+
 
 const drawerWidth = 240;
 
@@ -129,10 +132,9 @@ export default function PersistentDrawerLeft() {
           </IconButton>
         </div>
         <List>
-          {['About', 'Career', 'Portfolio', 'MiniGame', 'Contact'].map((text, index) => (
+          {['About', 'Career', 'Portfolio', 'MiniGame', 'Github'].map((text, index) => (
             <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
+              <FaceIcon />{index % 5 === 0 ? <SchoolIcon /> : <ComputerIcon /> : <CasinoIcon /> : <GitHubIcon />}
             </ListItem>
           ))}
         </List>
