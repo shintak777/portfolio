@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Router, Route } from 'react-router';
-import Link from 'react-router';
+import 
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import About from './articles/About';
 import Career from './articles/Career';
