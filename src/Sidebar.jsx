@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, Route } from 'react-router';
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
@@ -13,12 +14,13 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
 import FaceIcon from '@material-ui/icons/Face';
 import SchoolIcon from '@material-ui/icons/School';
 import ComputerIcon from '@material-ui/icons/Computer';
 import CasinoIcon from '@material-ui/icons/Casino';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import { Face } from '@material-ui/icons';
 
 
 const drawerWidth = 240;
@@ -132,11 +134,36 @@ export default function PersistentDrawerLeft() {
           </IconButton>
         </div>
         <List>
-          {['About', 'Career', 'Portfolio', 'MiniGame', 'Github'].map((text, index) => (
-            <ListItem button key={text}>
-              <FaceIcon />{index % 5 === 0 ? <SchoolIcon /> : <ComputerIcon /> : <CasinoIcon /> : <GitHubIcon />}
+        <Link to="/About" style={{boxShadow:'none',textDecoration:'none',color:'inherit',fontFamily:'Montserrat, sans-self'}}>
+            <ListItem button>
+                <ListItemIcon><FaceIcon /></ListItemIcon>
+                <ListItemText primary="About" />
             </ListItem>
-          ))}
+        </Link>
+        <Link to="/Career" style={{boxShadow:'none',textDecoration:'none',color:'inherit',fontFamily:'Montserrat, sans-self'}}>
+            <ListItem button>
+                <ListItemIcon><createIcon /><SchoolIcon /></ListItemIcon>
+                <ListItemText primary="Career" />
+            </ListItem>
+        </Link>
+        <Link to="/Portfolio" style={{boxShadow:'none',textDecoration:'none',color:'inherit',fontFamily:'Montserrat, sans-self'}}>
+            <ListItem button>
+                <ListItemIcon><ComputerIcon /></ListItemIcon>
+                <ListItemText primary="Portfolio" />
+            </ListItem>
+        </Link>
+        <Link to="/MiniGame" style={{boxShadow:'none',textDecoration:'none',color:'inherit',fontFamily:'Montserrat, sans-self'}}>
+            <ListItem button>
+                <ListItemIcon><CasinoIcon /></ListItemIcon>
+                <ListItemText primary="MiniGame" />
+            </ListItem>
+        </Link>
+        <Link to="/Github" style={{boxShadow:'none',textDecoration:'none',color:'inherit',fontFamily:'Montserrat, sans-self'}}>
+            <ListItem button>
+                <ListItemIcon><GitHubIcon /></ListItemIcon>
+                <ListItemText primary="Github" />
+            </ListItem>
+        </Link>
         </List>
       </Drawer>
       <main
