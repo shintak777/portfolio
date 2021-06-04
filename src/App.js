@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import 
+import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import About from './articles/About';
@@ -14,14 +14,9 @@ import Sidebar from './Sidebar';
 const App = () => {
   return (
     <div className="App" id="root">
-      <Router>
+    <Router>
      <Sidebar />
-     <About />
-     <Career />
-     <Portfolio />
-     <MiniGame />
-     <Github />
-     </Router>
+    </Router>
     </div>
   );
 }
