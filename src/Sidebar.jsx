@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 import clsx from 'clsx';
+import App from './App';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -17,8 +18,6 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import FaceIcon from '@material-ui/icons/Face';
-import SchoolIcon from '@material-ui/icons/School';
-import ComputerIcon from '@material-ui/icons/Computer';
 import CasinoIcon from '@material-ui/icons/Casino';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
@@ -138,18 +137,6 @@ export default function PersistentDrawerLeft() {
             <ListItem button>
                 <ListItemIcon><FaceIcon /></ListItemIcon>
                 <ListItemText primary="About" />
-            </ListItem>
-        </Link>
-        <Link to="/Career" style={{boxShadow:'none',textDecoration:'none',color:'inherit',fontFamily:'Montserrat, sans-self'}}>
-            <ListItem button>
-                <ListItemIcon><createIcon /><SchoolIcon /></ListItemIcon>
-                <ListItemText primary="Career" />
-            </ListItem>
-        </Link>
-        <Link to="/Portfolio" style={{boxShadow:'none',textDecoration:'none',color:'inherit',fontFamily:'Montserrat, sans-self'}}>
-            <ListItem button>
-                <ListItemIcon><ComputerIcon /></ListItemIcon>
-                <ListItemText primary="Portfolio" />
             </ListItem>
         </Link>
         <Link to="/MiniGame" style={{boxShadow:'none',textDecoration:'none',color:'inherit',fontFamily:'Montserrat, sans-self'}}>
