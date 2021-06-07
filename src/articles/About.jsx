@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-<h2 id="About">About</h2>
+{/* <h2 id="About">About</h2>
 <ul class="h2About">
     <li>名前：平木伸拓</li>
     <li>現住所：東京都豊島区</li>
@@ -21,7 +21,7 @@ import React, { Component } from 'react';
 <h2 id="Portfolio">Portfolio</h2>
 <ul class="delete-marker">
 <li>SQL・UNIX・JavaScriptなどの研修を通しエンジニアデビューを目指して日々研鑽しております。その他PC自作、ブロックチェーンなど趣味として幅広く学習しております。</li>
-</ul>
+</ul> */}
 
 
 
