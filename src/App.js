@@ -4,11 +4,11 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 import About from './articles/About';
 import MiniGame from './components/MiniGame';
-import Github from './components/Github';
 
 import './App.css';
 import Sidebar from './Sidebar';
 import { Home } from '@material-ui/icons';
+import Contact from './components/Contact';
 
 const App = () => {
   return (
@@ -19,10 +19,10 @@ const App = () => {
       <Route path="/" component={Home} />
       <Route path="/About" component={About} />
       <Route path="/MiniGame" component={MiniGame} />
-      <Route path="/Github" component={Github} />
+      <Route path="/Contact" component={Contact} />
     </Router>
     </div>
   );
 }
 
-export default App
+export default App;

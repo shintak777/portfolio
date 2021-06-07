@@ -114,7 +114,7 @@ export default function PersistentDrawerLeft() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            SUPER DOME千本中立売　屋外喫煙所のような書き溜め
+            Shintaku Hiraki's Portfolio
           </Typography>
         </Toolbar>
       </AppBar>
@@ -145,10 +145,10 @@ export default function PersistentDrawerLeft() {
                 <ListItemText primary="MiniGame" />
             </ListItem>
         </Link>
-        <Link to="/Github" style={{boxShadow:'none',textDecoration:'none',color:'inherit',fontFamily:'Montserrat, sans-self'}}>
+        <Link to="/Contact" style={{boxShadow:'none',textDecoration:'none',color:'inherit',fontFamily:'Montserrat, sans-self'}}>
             <ListItem button>
                 <ListItemIcon><GitHubIcon /></ListItemIcon>
-                <ListItemText primary="Github" />
+                <ListItemText primary="Contact" />
             </ListItem>
         </Link>
         </List>
@@ -159,23 +159,10 @@ export default function PersistentDrawerLeft() {
         })}
       >
         <div className={classes.drawerHeader} />
-        <Typography paragraph>
-        信じていた信じられたその全てを今始めよう
-        不器用なこの勇気はコンプレックス・イマージュ
-        乾いた風が追いかける風のように
-        そっと背中を押す気がした
-        耳をすませばざわめくロンフリーケンシー
-        新しいその場所への扉を開け放て
-        切なくて愛おしいほど想いは時空を超えて
-        together
-        ずっと心はそばにある
-        大切なあの日溜まりが
-        刹那に散りゆく景色
-        今全ての力を与え賜え
-        僕は瞳をそらさずに
-        傷も涙も真実も
-        </Typography>
+        
       </main>
+       <img src="./assets/img/header.jpg" alt="" />
+        <p>Shintaku Hiraki's Portfolio</p>
     </div>
   );
 }
