@@ -21,7 +21,7 @@ import FaceIcon from '@material-ui/icons/Face';
 import CasinoIcon from '@material-ui/icons/Casino';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { requirePropFactory } from '@material-ui/core';
-// import TopPicture from './assets/img/TopPicture.jpg';
+import './assets/img/TopPicture.jpg';
 
 const drawerWidth = 240;
 
@@ -172,7 +172,7 @@ export default function MiniDrawer() {
       </Drawer>
       <main className={classes.content}>
         <div className={classes.toolbar} />
-        {/* <TopPicture src="./assets/img/TopPicture.jpg" /> */}
+        <img src={"./assets/img/TopPicture.jpg"} />
       </main>
     </div>
   );

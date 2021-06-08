@@ -2,7 +2,7 @@ body{
     background-color: #efefef;
   }
   
-  #btn{
+  #Btn{
     margin: auto;
     width:200px;
     height:200px;
@@ -11,7 +11,7 @@ body{
     text-align: center;
     line-height:200px;
     color:#fff;
-    font-size:50px;
+    font-size:66px;
     font-weight: bold;
     cursor:pointer;
     opacity:0.9;
@@ -20,11 +20,18 @@ body{
     user-select: none;
   }
   
-  #btn:hover{
+  #Btn:hover{
     opacity:1;
   }
   
-  #btn.pushed{
+  #Btn.pushed{
     margin-top:7px;
     box-shadow:0 4px 0 #D1483E;
+  }
+
+  .DeleteMarker {
+      list-style: none;
+      width: 555px;
+      margin-right: auto;
+      margin-left : auto;
   }
