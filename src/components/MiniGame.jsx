@@ -26,7 +26,7 @@ const MiniGame = () => {
     <h2 id="MiniGame">MiniGame</h2>
       <div id = "Btn">PUSH</div>
       <ul className="DeleteMarker">
-          <li>1/7.7の確率で当たります</li>
+          <li>1/7.7の確率で数字が揃って当たります</li>
           <li>脳汁を出したいときなど暇つぶしにどうぞ。</li>
       </ul>
     </div>
