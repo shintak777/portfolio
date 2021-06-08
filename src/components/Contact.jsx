@@ -7,6 +7,7 @@ const Contact = () => {
     <div>
       <a href="https://github.com/shintak777" target="_blank"> 
         <GitHubIcon />
+        Githubはこちらから
       </a>
     </div>
   </div>
