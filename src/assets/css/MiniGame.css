@@ -2,7 +2,7 @@ body{
     background-color: #efefef;
   }
   
-  #Btn{
+  #btn{
     margin: auto;
     width:200px;
     height:200px;
@@ -20,11 +20,11 @@ body{
     user-select: none;
   }
   
-  #Btn:hover{
+  #btn:hover{
     opacity:1;
   }
   
-  #Btn.pushed{
+  #btn.pushed{
     margin-top:7px;
     box-shadow:0 4px 0 #D1483E;
   }
