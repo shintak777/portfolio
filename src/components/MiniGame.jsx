@@ -12,8 +12,8 @@ const MiniGame = () => {
   ];
 
   const onClick = () => {
-    const point = Math.random();
-    if (point < 0.011441647597254004) {
+    const n = Math.random();
+    if (n < 0.011441647597254004) {
       setText(Bonus[Math.floor(Math.random()*Bonus.length)]);
     }
     else {
