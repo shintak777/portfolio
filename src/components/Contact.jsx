@@ -5,9 +5,12 @@ const Contact = () => {
   return (
   <div>
     <div>
-      <a href="https://github.com/shintak777" target="_blank" rel="noreferrer"> 
-        <GitHubIcon />
-        <h1>Remote Repository</h1>
+      <br/>
+      <br/>
+      <h1>My Github</h1>
+      <br/>
+      <a href="https://github.com/shintak777" target="_blank" rel="noreferrer" >
+        <GitHubIcon style={{ fontSize: 70 }}/>
       </a>
     </div>
   </div>

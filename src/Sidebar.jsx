@@ -17,11 +17,14 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
+import { Home } from '@material-ui/icons';
 import FaceIcon from '@material-ui/icons/Face';
 import CasinoIcon from '@material-ui/icons/Casino';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { requirePropFactory } from '@material-ui/core';
+
 import Logo from './assets/img/TopPicture.jpg';
+import './assets/css/SideBar.css';
 
 const drawerWidth = 240;
 
@@ -150,6 +153,12 @@ export default function MiniDrawer() {
         </div>
         <Divider />
         <List>
+        <Link to="/"  style={{boxShadow:'none',textDecoration:'none',color:'inherit',fontFamily:'Montserrat, sans-self'}}>
+          <ListItem button>
+            <ListItemIcon><Home /></ListItemIcon>
+            <ListItemText primary="Home" />
+          </ListItem>  
+        </Link>
         <Link to="/About" style={{boxShadow:'none',textDecoration:'none',color:'inherit',fontFamily:'Montserrat, sans-self'}}>
             <ListItem button>
                 <ListItemIcon><FaceIcon /></ListItemIcon>
@@ -172,7 +181,10 @@ export default function MiniDrawer() {
       </Drawer>
       <main className={classes.content}>
         <div className={classes.toolbar} />
-        <img src={Logo} />
+        <div class="topPicture">
+          <img src={Logo} alt="Shintaku Hiraki's Portfolio" />
+          <p>Shintaku Hiraki's Portfolio</p>
+        </div>
       </main>
     </div>
   );
