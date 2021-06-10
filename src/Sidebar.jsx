@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
-import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import clsx from 'clsx';
-import App from './App';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -17,11 +16,9 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import { Home } from '@material-ui/icons';
 import FaceIcon from '@material-ui/icons/Face';
 import CasinoIcon from '@material-ui/icons/Casino';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import { requirePropFactory } from '@material-ui/core';
 
 import Logo from './assets/img/TopPicture.jpg';
 import './assets/css/SideBar.css';
@@ -128,8 +125,8 @@ export default function MiniDrawer() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap>
-          Shintaku Hiraki's Portfolio
+          <Typography variant="h4" noWrap>
+          <a href="/" className="Title" >Shintaku Hiraki's Portfolio</a>
           </Typography>
         </Toolbar>
       </AppBar>
@@ -153,12 +150,6 @@ export default function MiniDrawer() {
         </div>
         <Divider />
         <List>
-        <Link to="/"  style={{boxShadow:'none',textDecoration:'none',color:'inherit',fontFamily:'Montserrat, sans-self'}}>
-          <ListItem button>
-            <ListItemIcon><Home /></ListItemIcon>
-            <ListItemText primary="Home" />
-          </ListItem>  
-        </Link>
         <Link to="/About" style={{boxShadow:'none',textDecoration:'none',color:'inherit',fontFamily:'Montserrat, sans-self'}}>
             <ListItem button>
                 <ListItemIcon><FaceIcon /></ListItemIcon>
