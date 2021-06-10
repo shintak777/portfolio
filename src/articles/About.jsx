@@ -1,10 +1,11 @@
 import React from 'react';
+import '../assets/css/About.css';
 
 const About = () => {
     return(
         <div>
             <h2>About</h2>
-            <ul>
+            <ul class="delete-marker">
                 <li>名前：平木伸拓</li>
                 <li>現住所：東京都豊島区</li>
                 <li>学歴：学習院大学法学部政治学科卒業</li>
@@ -13,7 +14,7 @@ const About = () => {
                 </ul>
             <br/>
             <h2>Career</h2>
-            <ul>
+            <ul class="delete-marker">
                 <li>2021年3月学習院大学法学部政治学科卒業</li>
                 <li>2021年4月フォース株式会社入社</li>
                 </ul>
