@@ -13,7 +13,8 @@ const MiniGame = () => {
 
   const onClick = () => {
     const n = Math.random();
-    if (n < 0.011441647597254004) {
+    if (n < 0.011441647597254004) {     //1/87.4
+      // if (n < 0.0031269543464665416) {   //1/319.8
       setText(Bonus[Math.floor(Math.random()*Bonus.length)]);
     }
     else {
